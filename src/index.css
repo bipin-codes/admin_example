@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.animated-button {
+    @apply hover:scale-105 duration-200 hover:shadow-md hover:shadow-gray-400;
+}
+.static-button {
+    @apply hover:scale-100 duration-0 hover:shadow-none;
+}
+
+.tox-menubar button {
+    width: 5rem !important;
+}
+
+button {
+    @apply text-xl self-start px-5 py-3 border-2  font-bold rounded-lg animated-button;
+}
+input {
+    @apply p-4 rounded-md;
+}
+
+.action-button {
+    @apply text-blue-800 bg-blue-300 border-blue-400;
+}
+.delete-button {
+    @apply text-red-800 bg-red-300 border-red-400;
+}
+.publish-button {
+    @apply text-green-800 bg-green-300 border-green-400;
+}
